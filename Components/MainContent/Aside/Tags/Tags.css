@@ -1,0 +1,50 @@
+.Tags {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.Tags section {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.Tags section ul {
+    list-style: none;
+    padding: 0;
+}
+.Tags section ul li {
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+
+}
+
+
+
+
+  
+  /* Laptops and Desktops (992px to 1199px) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .Tags section ul li {
+        font-size: 8px;
+        
+        }
+  }
+  
+  /* Large Desktops (1200px and above) */
+  @media only screen and (min-width: 1200px) {
+    .Tags section ul li {
+        font-size: 12px;
+        
+        }
+  }
+  

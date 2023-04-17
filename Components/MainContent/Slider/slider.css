@@ -1,0 +1,57 @@
+div {
+    position: relative;
+}
+
+
+div .app-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 1px solid #545454;
+    padding-left: 10px;
+  }
+
+  div .app-list li {
+    margin-right: 25px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s
+  }
+  div .app-list li:hover {
+    border-bottom: 2px solid #B248D8 ;
+  }
+
+  div .arrow-left {
+    position: absolute;
+    left: -25px;
+    top: -4px;
+    background-color: rgba(30, 30, 30,0.3);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    padding: 5px;
+    z-index: 99999;
+
+    
+
+
+  }
+  div .arrow-right {
+    position: absolute;
+    top: -4px;
+    right: -15px;
+    background-color: rgba(30, 30, 30,0.3);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    padding: 5px;
+    z-index: 99999;
+
+  }
+  @media only screen and (max-width: 767px) {
+    div .arrow-right {
+      right: 0px;
+    }
+}
+  
