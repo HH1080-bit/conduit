@@ -1,0 +1,132 @@
+.post {
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid #ACACAC;
+    margin-bottom: 30px;
+}
+
+.post .post-pp {
+    margin-right: 15px;
+}
+.post .post-info h3  {
+    margin: 0;
+    padding: 0;
+    color: #B248D8;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.post .post-info span:first-of-type {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 12px;
+    color: #ACACAC;
+    margin-bottom: 20px;
+}
+.post .post-info h2 {
+    color: #Fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.post .post-info p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.post .post-info .tags {
+    background-color: #1e1e1e;
+    display: flex;
+     flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+.post .post-info .tags span{
+    color: #ACACAC;
+    margin-right: 15px;
+
+}
+
+.post .post-info .tags span:first-of-type {
+    color: #fff;
+    margin-bottom: 0;
+    border: 1px solid #B248D8;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+
+.post .post-info .tags span:last-of-type {
+   margin-right: 30px;
+}
+
+.post .post-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 32px;
+}
+
+.post .post-data button {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.post .post-data img {
+    margin-bottom: 20px;
+}
+
+
+  /* Mobile Devices (up to 767px) */
+  @media only screen and (max-width: 767px) {
+       .post .post-info .tags span{
+        font-size: 12px;
+        white-space: nowrap;
+    } 
+   .post .post-data {
+    position: relative;
+    bottom: 0px;
+    justify-content: flex-start;
+    right: 80px;
+    }
+    .post .post-data img {
+        display: none;
+    }
+    .post .post-data button {
+        display: flex;
+        align-items: center;
+        
+    }
+    .post .post-data button > * {
+        margin-left: 5px;
+    }
+}
+  
+  /* Tablets (768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .post .post-info .tags span{
+        font-size: 12px;
+        white-space: nowrap;
+    }  
+
+}
+  
+  /* Laptops and Desktops (992px to 1199px) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .post .post-info .tags span{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .icon {
+        margin-right: 20px;
+    }
+
+  }
